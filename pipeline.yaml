@@ -1,0 +1,11 @@
+---
+
+- hosts: 3.136.156.32
+
+  vars: 
+   - MyMessage: "{{line1}}"
+   - DBMessage: "{{line2}}"
+
+  tasks:
+   - name: index.html copy
+     template: src=/etc/ansible/index.html.j2 dest=/var/www/html/index.html

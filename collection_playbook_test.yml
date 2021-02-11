@@ -1,0 +1,4 @@
+- name: Run a module from inside a collection using the collections keyword
+  hosts: localhost
+  collections:
+    - myfirst.test_collection
